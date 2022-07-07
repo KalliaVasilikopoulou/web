@@ -4,7 +4,8 @@ dotenv.config();
 
 const fs = require("fs");
 
-let model = require('../model/model_pg.cjs');
+// let model = require('../model/model_pg.cjs');
+let model = require('../model/db.pg.js');
 let bookingController = require ('./bookingController.cjs');
 
 const monthsGreek = {0: 'Ιανουάριος', 1: 'Φεβρουάριος', 2: 'Μάρτιος', 3: 'Απρίλιος', 4: 'Μάιος', 5: 'Ιούνιος', 6: 'Ιούλιος', 7: 'Αύγουστος', 8: 'Σεπτέμβριος', 9: 'Οκτώβριος', 10: 'Νοέμβριος', 11: 'Δεκέμβριος'}
