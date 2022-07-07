@@ -1,7 +1,8 @@
 const dotenv = require('dotenv');
 dotenv.config();
 
-let model = require('../model/model_pg.cjs');
+// let model = require('../model/model_pg.cjs');
+let model = require('../model/db.pg.js');
 
 const max = 4;  //the club has a total of 4 courts
 const min = 1;  //first (initial) court
