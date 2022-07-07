@@ -1,0 +1,401 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    background-image: url("../imgs/seamless.jpg");
+    z-index: -1;
+}
+
+.navbarGen {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: #0091d2;
+}
+
+.navbarGen .button_list { 
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0;
+    list-style: none;
+}
+
+.navbarGen .button_list .navButton { 
+    height: 100%;
+    min-width: fit-content;
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.navbarGen .navButton a { 
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    line-height: 100px;
+}
+
+.navbarGen .navButton:hover .dropdown{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.navbarGen .dropdown { 
+    display: none;
+    position: absolute;
+    left:0;
+    background-color: #fac300;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbarGen .dd_content { 
+    position: relative;
+    top: 0;
+    border-top: solid white 1px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.navbarGen .dd_content a{ 
+    line-height: 40px;
+    padding: auto;
+}
+
+.navbarGen .dd_content:hover { 
+    background-color: #f78da7;
+}
+
+.navbarGen .connection_list { 
+    display: flex;
+    flex-direction: row;
+    
+    position: absolute;
+    right: 0px;
+    
+    height: 100%;
+    
+    list-style: none;
+    background-color: #fac300;
+}
+
+.navbarGen .connection_list .accButton button { 
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+
+    height: 100px;
+    width: 100%;
+    min-width: fit-content;
+
+    color:rgb(51, 48, 50);
+    background-color: #fac300;
+    border: none;
+
+    padding: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbarGen .connection_list .connectedButton { 
+    vertical-align: middle;
+    margin: auto;
+}
+
+.navbarGen .connection_list .connectedButton button{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    color: rgb(51, 48, 50); 
+    background-color: #fac300;
+    border: none; 
+}
+
+.navbarGen .connection_list .connectedButton  p{
+    margin-bottom: 0px; 
+}
+
+.navbarGen .connection_list .connectedButton i  {
+    font-size: 30px;
+    color: rgb(51, 48, 50);
+}
+
+.navbarGen .collapse_button { 
+    font-size: 40px;
+    border: none; 
+    background-color: #0091d2;
+    color: darkgrey;
+}
+
+.sidenav-container { 
+
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 100px;
+
+    width : 100vw;
+    height: 100vh;
+
+    display: none;
+    z-index: 500;
+
+}
+
+.sidenavbar { 
+    display : flex;
+    flex-direction: column;
+
+    max-width: 250px;
+    padding: 30px 0px 30px 0px;
+
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #0091d2;
+}
+
+.sidenavbar .side_button_list{ 
+    display: flex;
+    flex-direction: column;
+
+    width: 100%; 
+    padding: 0px;
+
+    list-style: none;
+    color: white;
+    background-color: #0091d2;
+}
+
+.sidenavbar .side_connection_list { 
+    display: flex;
+    flex-direction: column;
+
+    width: 100%; 
+    padding-left: 0px;
+
+    list-style: none;
+    color: white; 
+}
+
+.sidenavbar .side_button_list .side_navButton { 
+    height: 50px;
+    min-width: fit-content;
+    width: 100%; 
+    text-align: center;
+}
+
+.sidenavbar .side_connection_list .side_accButton button{ 
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+
+    height: 50px;
+    width: 100%;
+    min-width: fit-content;
+
+    border: none; 
+    color: white; 
+    background-color: #0091d2;
+    padding-left: 0px;
+}
+
+.sidenavbar .side_button_list a { 
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    line-height: 2.5;
+}
+
+.accountmenu-container { 
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+
+    width: 100%;
+    height: fit-content; 
+    
+    display: block; 
+    z-index: 500;
+}
+
+.account{ 
+    display: none;
+    flex-direction: column;
+
+    position: absolute; 
+    right: 0px;
+
+    max-width: 350px; 
+    width: 350px;
+    padding: 0px;
+
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #0091d2;
+}
+
+.accountmenu .accountChoices {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%; 
+    padding: 20px 0px 0px 0px; 
+
+    list-style: none; 
+    color: white;
+    background-color: #0091d2;
+} 
+
+.accountmenu .accountChoices .accountChoice { 
+    display: flex; 
+    flex-direction: column;
+
+    padding: 0px 10px 0px 10px;
+    height: 50px;
+    min-width: fit-content;
+    width: 100%; 
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.accountmenu .accountChoices .accountChoice a{ 
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    line-height: 2.5;
+}
+
+.accountChoice .accountInfoDropdown{ 
+    display: none;
+}
+
+.accountChoice:hover .accountInfoDropdown{ 
+    display: flex;
+}
+
+.accountChoice .accountInfoDropdown .accountList { 
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-height: 300px; 
+    overflow-y: scroll;
+
+    scrollbar-width: thin;       
+    scrollbar-color: #c8c8c8 white;
+
+    list-style: none; 
+    color: white;
+    padding: 0px;
+
+    border-radius: 10px;
+    border: 1px solid #cdcdcd;
+    background-color: white;
+    z-index: 600;
+}
+
+.accountList::-webkit-scrollbar {
+    width: 12px;
+}
+  
+.accountList::-webkit-scrollbar-track {
+    background: white;
+}
+  
+.accountList::-webkit-scrollbar-thumb {
+    background-color: #c8c8c8;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+
+.accountInfoDropdown .accountList .accountListItem{ 
+    margin-left: 6px;
+
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+
+    color: #c8c8c8;
+
+    border-bottom: 1px solid #c8c8c8;
+
+}
+
+.accountInfoDropdown .accountList .accountListItem:last-child{ 
+    border: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbarGen .button_list {
+        display: none;
+    }
+
+    .navbarGen #no_account {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) { 
+
+    .navbarGen .connection_list .connectedButton  p{ 
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 993px) {
+    .navbarGen .collapse_button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .navbarGen {
+        height: 80px;
+    }
+
+    .navbarGen .collapse_button{ 
+        font-size: 35px;
+    }
+
+    .navbarGen .connection_list .connectedButton button{ 
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .sidenav{ 
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sidenav-container { 
+        top: 80px;
+    }
+}

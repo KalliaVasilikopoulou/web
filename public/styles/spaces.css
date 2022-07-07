@@ -1,0 +1,190 @@
+.spaces_card { 
+    display: flex; 
+    flex-direction: column;
+
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+
+.spaces_banner { 
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: fit-content;
+    min-height: 300px;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+.spaces_banner #title { 
+    width: 80%;
+    padding: 20px 0px 20px 0px;
+    color: #fd8f76;
+    position: relative;
+    left: 10%; 
+
+    word-wrap: normal;
+}
+
+.spaces_banner h1{ 
+    text-align: left; 
+
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.spaces_banner #subtitle { 
+    width: 80%;
+    color: #6c6f6f;
+    position: relative;
+    left: 10%;
+    padding-bottom: 40px;
+
+    word-wrap: normal;
+}
+
+.spaces_banner p{ 
+    text-align: left;
+    
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.spaces_info { 
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    background-image: url("../imgs/spacesBackground.jpg");
+}
+
+.spaces_info_row { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.spaces_info span { 
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+    background-color: white; 
+    color: #fd8f76;
+    box-shadow: 5px 5px #6c6f6f;
+    margin: 50px 0px 50px 0px;
+}
+
+.spaces_info .banner { 
+    font-size: 30px;
+
+    width: 100%;
+    height: 70px; 
+    line-height: 40px;
+    padding: 15px;
+
+    color: currentColor;
+    text-align: left;
+
+    border-bottom: 1px solid;
+}
+
+.spaces_info .text { 
+    font-size: 20px;
+    padding: 10px;
+}
+
+.spaces_info .button { 
+    text-align: left;
+    min-height: 50px;
+    height: fit-content;
+    font-size: 20px;
+    background-color: currentColor;
+}
+
+.spaces_info #courts { 
+    align-self: flex-start;
+}
+
+.spaces_info #pool { 
+    align-self: flex-start;
+}
+
+.spaces_info #equipment { 
+    align-self: flex-start;
+}
+
+.spaces_info #restaurant { 
+    align-self: flex-start;
+}
+
+.spaces_info .button a { 
+    color: white;
+    display:flex;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.spaces_info .button:hover{ 
+    background-color:  #f78da7;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .spaces_card{
+        width: 100%;
+    }
+    .spaces_info span { 
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1200px) { 
+    .spaces_info span{ 
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .spaces_banner h1{ 
+        font-size: 35px;
+    }
+    .spaces_banner p{ 
+        font-size: 18px;
+    }
+
+    .spaces_info .banner{ 
+        font-size: 25px;
+    }
+
+    .spaces_info .text{ 
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .spaces_banner h1{ 
+        font-size: 30px;
+    }
+    .spaces_banner p{ 
+        font-size: 15px;
+    }
+ 
+    .spaces_info .banner { 
+        font-size: 20px;
+    }
+
+    .spaces_info .text{ 
+        font-size: 15px;
+    }
+
+}

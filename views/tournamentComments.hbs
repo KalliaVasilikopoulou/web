@@ -1,0 +1,30 @@
+<div class = "booking_main row m-0">
+    <div class = "booking_card p-0"> 
+        <div class = "booking_banner row m-0">
+            <h1 id = "title" class = "row">
+                Σχόλια Χρηστών
+            </h1>
+            <p id = "subtitle" class = "row"> 
+                Σε αυτήν την σελίδα μπορείτε να βρείτε τα σχόλια που έχουν πιθανόν αφήσει κάποιοι χρήστες που δήλωσαν συμμετοχή σε τουρνουά. Όλα τα σχόλια
+                αφορούν τις συμμετοχές σε τουρνουά του κλαμπ. Πιθανόν ανάμεσα σε αυτά να αναφέρεται κάποια αλλαγή στην ώρα προσέλευσης του συμμετέχοντος ή
+                και γενικά στην συμμετοχή του στο τουρνουά.
+            </p>
+            <p id = "my_tournaments" class = "row">
+                {{#if joins}}
+                    {{#each joins}}
+                        {{#if comments}}
+                            <div class="each_comment">
+                                <p style = "font-size: 24px; color:#ca31a4">• Ο χρήστης "{{accountname}}" δήλωσε συμμετοχή στο τουρνουά "{{title}}" και σχολίασε: <br></p>
+                                {{comments}}<br>
+                            </div>
+                        {{/if}}
+                    {{/each}}
+                {{else}}
+                    <p style = "font-size: 24px; margin: 0 auto;">Δεν υπάρχουν σχόλια για τα τουρνουά... <br></p>
+                {{/if}}
+            </p>
+        </div> 
+        <div class = "booking_info row m-0"> 
+        </div>
+    </div>
+</div>

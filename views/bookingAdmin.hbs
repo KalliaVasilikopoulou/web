@@ -1,0 +1,74 @@
+<div class = "popup" id = "accept_decline"> 
+    <div class = "modal-container">
+        <div class = "modal">
+            <form class = "form"> 
+                <div class = "info_text row m-0 p-0">
+                    <h4>
+                        Είστε σίγουροι ότι θέλετε να αλλάξετε τη διαθεσιμότητα?
+                    </h4>
+                </div>
+                <div class = "button_row_form row"> 
+                    <button type = "button" class = "submit" id = "proceedBtn">
+                        Ναι
+                    </button>
+                    <button type = "button" class = "submit" id = "cancelBtn">
+                        Όχι
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class = "booking_main row m-0">
+    <div class = "booking_card p-0"> 
+        <div class = "booking_banner row m-0">
+            <h1 id = "title" class = "row">
+                Κράτηση γηπέδου
+            </h1>
+            <p id = "subtitle" class = "row"> 
+                Παρακάτω δίνεται η δυνατότητα επιλογής κάποιου εκ των τεσσάρων γηπέδων μας διαθέσιμων στο κοινό. 
+                Στην περίπτωση που υπάρχει ανάγκη ακύρωσης της κράτησής σας, παρακαλούμε επικοινωνήστε μαζί μας τηλεφωνικώς. 
+                Η διαθεσιμότητα κάθε γηπέδου, εκτός από τις παρούσες κρατήσεις, καθορίζεται και από τον καιρό ή οποιαδήποτε 
+                άλλη ειδική συνθήκη.
+            </p>
+        </div> 
+        <div class = "booking_info row m-0"> 
+            <div class = "court_booking row m-0">
+                <div class = "buttons"> 
+                    <div id = "label"> ΓΗΠΕΔΟ </div>
+                    <a href = "/booking/courts/previous"><button id = "previous">&laquo;</button></a>
+                    <div id = "current"> {{courtVariable}}</div>
+                    <a href = "/booking/courts/next"><button id = "next">&raquo;</button></a>
+                </div>
+                <div class = "info row"> 
+                    <div id = "court1" class = "current_court_info row"> 
+                        <p>Το πρώτο μας, ιστορικά, γήπεδο. Πρόκειται για χωμάτινο γήπεδο, πρόσφατα ανακαινισμένο,
+                        που χρησιμοποιείται αποκλειστικά από τους επισκέπτες μας. Διαθέτει φωτισμό από led κάνοντάς 
+                        το κατάλληλο και για βραδινή χρήση.</p>
+                    </div>
+                    <div id = "court2" class = "current_court_info row"> 
+                        <p>Γήπεδο από συνθετικό γρασίδι για γρηγορότερο παιχνίδι. Διαθέτει φωτισμό για χρήση τις νυχτερινές 
+                        ώρες.</p>
+                    </div>
+                    <div id = "court3" class = "current_court_info row"> 
+                        <p>Γήπεδο από συνθετικό γρασίδι για μίνι τέννις. Πρόκειται για το νεότερο, χρονικά, γήπεδό μας ανοιχτό 
+                        στο κοινό και διαθέτει φωτισμό LED. </p>
+                    </div>
+                    <div id = "court4" class = "current_court_info row"> 
+                        <p>Σκληρό, ακρυλικό γήπεδο, πρόσφατα ανακαινισμένο για χρήση σε γρήγορο παιχνίδι.</p>
+                    </div>
+                </div>
+                <div class = "booking_table" class = "p-0 m-0">
+                    <table class = "table">
+                        
+                    </table> 
+                </div>
+                <div class = "legend"> Διαθέσιμο: <span class = "legend_sign" style="color: #19E600;">&#10003;</span> Μη-διαθέσιμο: <span class = "legend_sign" style="color: #FF2E2E;">&#88;</span></div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type = "application/javascript" src = "/bookingAdminMain.cjs"> </script>

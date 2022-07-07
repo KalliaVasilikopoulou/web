@@ -1,0 +1,82 @@
+/*footer*/
+.footer { 
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+    width: 100%; 
+    background-color: #c8c8c8;
+    position: relative;
+    bottom: 0;
+}
+
+/*footer content - doesn't show in small screens*/
+.sections { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: fit-content;
+    list-style: none;
+    padding:30px 0px 30px 0px;
+    margin: auto;
+}
+
+/*page sections*/
+.sections .ftrSection { 
+    display: flex;
+    flex-direction: column;
+    vertical-align: top; 
+
+    width: 20%;
+    position: center;
+    min-height: 100%;
+}
+
+.ftrSection a { 
+    text-decoration: none;
+    color: white;
+}
+
+.ftrSection h1 { 
+    font-size: 25px;
+    text-align: top;
+}
+
+/*subpages*/
+.ftrSection .scList { 
+    font-size: 20px;
+    padding: 0px;
+    list-style: none;
+}
+
+.ftrSection .scList .listItem { 
+    margin-top: 30px;
+}
+
+.ftrSection .scList .listItem a{ 
+    color:rgb(51, 48, 50);
+}
+
+.footer hr{ 
+    color: black;
+    margin: 10px;
+}
+
+.footer p { 
+    font-size: 20px;
+    color:rgba(202, 49, 164, 1); 
+
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 1026px) {
+    .sections{
+        display: none;
+    }
+}

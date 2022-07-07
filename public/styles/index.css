@@ -1,0 +1,137 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    background-image: url("../imgs/seamless.jpg");
+    z-index: -1;
+}
+
+/*page specific content*/
+.card{ 
+    display: flex;
+    flex-direction: column;
+
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+
+/*top of page*/
+.card .banner{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    max-height: 400px;
+    min-height: 210px;
+    width: 100%;
+    background-color: white;
+    margin-top: 0px;
+}
+
+.card .banner .banner_img {
+    width: 100%;
+    max-height: 400px;
+    min-height: 210px;
+    margin: auto;
+}
+
+.card .banner .title { 
+    text-align: left;
+
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+
+    width: 80%;
+    padding:  40px 0px 0px 50px;
+    color: white;
+    position: absolute;
+    left: 0%;
+    word-wrap: normal;
+}
+
+/*description*/
+.card .intro { 
+    display: flex; 
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+
+    min-height: 300px;
+    height: fit-content;
+
+    align-items: start;
+}
+
+.card .intro h1 { 
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+ 
+    color: #ca31a4;
+    position: relative;
+    left: 10%;
+    padding-top: 50px;
+    text-align: left;
+}   
+
+.card .intro p{ 
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+
+    width: 80%;
+    color: #6c6f6f;
+    position: relative;
+    left: 10%;
+    padding: 20px 0px 40px 0px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1200px) {
+    .card{
+        width: 100%;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 1350px) {
+    .card .banner .title h1{ 
+        font-size: 35px;
+    }
+    .card .banner .title h2{ 
+        font-size: 35px;
+    }
+
+    .card #intro h1 { 
+        font-size: 35px;
+    }
+    .card #intro p{ 
+        font-size: 18px;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+    .card .banner .title h1{ 
+        font-size: 30px;
+    }
+    .card .banner .title h2{ 
+        font-size: 30px;
+    }
+
+    .card #intro h1 { 
+        font-size: 30px;
+    }
+    .card #intro p{ 
+        font-size: 15px;
+    }
+
+}

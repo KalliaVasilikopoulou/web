@@ -1,0 +1,46 @@
+
+
+<div class = "booking_main row m-0">
+    <div class = "booking_card p-0"> 
+        <div class = "booking_banner row m-0">
+            <h1 id = "title" class = "row">
+                Συμμετοχή σε τουρνουά
+            </h1>
+            <p id = "subtitle" class = "row"> 
+                Παρακάτω θα βρείτε την φόρμα την οποία θα πρέπει να συμπληρώσετε προκειμένου να συμμετάσχετε σε ένα ή και περισσότερα από τα τουρνουά μας.
+                Για περαιτέρω απορίες, επικοινωνήστε μαζι μας μέσω τηλεφώνου ή e-mail. <br>
+            </p>
+            <p id = "subtitle" class = "row">Προσοχή! <br>Για να συμμετάσχετε στα τουρνουά μας, θα πρέπει, αρχικά, να κάνετε εγγραφή στην ιστοσελίδα!<br></p>
+        </div> 
+        <div class = "booking_info row m-0"> 
+            <div class = "court_booking row m-0">
+                <form class = "form" method= "POST" enctype="application/x-www-form-urlencoded" action= "tournamentForm/joinTournament">
+                    <div class = "inputs col m-0">
+                        <div class="title row m-0 p-0"> 
+                            <h1 style = "font-size: 32px;">
+                                ΦΟΡΜΑ ΔΗΛΩΣΗΣ ΣΥΜΜΕΤΟΧΗΣ ΣΕ ΤΟΥΡΝΟΥΑ
+                            </h1> 
+                        </div>
+                        <div class = "field row mb-4 p-0"> 
+                            <label for = "tournament" class = "field_name col-7 p-0"> Τουρνουά<span style = "color:red">*</span> </label>
+                            <select name="tournamentid" id = {{selectedTournament}} class = "field_input" style="margin: 0 auto; min-width:500px;">
+                                {{#each tournaments}}
+                                    <option id = {{tournamentid}} value = {{tournamentid}}>{{title}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                        <div class = "field row mb-4 p-0"> 
+                            <label for = "comments" class = "field_name col-7 p-0"> Σχόλια </label>
+                            <textarea name = "comments" rows="5" class = "field_input col-7 p-0" placeholder="Εισάγετε εδώ τα σχόλιά σας&#10;(π.χ. μέρες που δεν μπορείτε να συμμετάσχετε)"></textarea>
+                        </div>
+                    </div>
+                    <button type = "submit" class = "submit" style="margin-left: 35%"> 
+                        Υποβολή
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type = "application/javascript" src = "/tournamentForm.cjs"> </script>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/tennis.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="styles/{{style}}">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/navBar.css"> 
+        <link rel="stylesheet" href="styles/forms.css">
+
+        <title>{{{title}}}</title>
+    </head>
+
+    <body class = "container-fluid p-0 m-0 w-100">
+        
+        <!--SIDENAV-->
+        <div class = "sidenav">
+            <div class = "sidenav-container" state = "hidden"> 
+                <div class = "sidenavbar"> 
+                    <ul class = "side_button_list row m-0"> 
+                        <li class = "side_navButton">
+                            <a href = "/">ΑΡΧΙΚΗ</a>
+                        </li>
+                        <li class = "side_navButton"> 
+                            <a href="/tennis">ΤΕΝΝΙΣ</a>
+                        </li>
+                        <li class = "side_navButton"> 
+                            <a href="/spaces">ΧΩΡΟΙ</a>
+                        </li>
+                        <li class = "side_navButton">
+                            <a href = "/booking">ΚΡΑΤΗΣΗ ΓΗΠΕΔΟΥ</a>
+                        </li> 
+                    </ul>
+                    <ul class = "side_connection_list row m-0">
+                        <li class = "side_accButton">
+                            <a href="/login"><button id = "loginBtn">LOGIN</button></a>
+                        </li> 
+                        <li class = "side_accButton">
+                            <a href="/signup"><button id = "signupBtn">SIGN UP</button></a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--NAVIGATION BAR-->
+        <nav class = "navbarGen row m-0 p-0">
+            <ul class = "button_list col-10 p-0 m-0">
+                <!--Home Page-->
+                <li class = "navButton col-lg-2 col-md-1 col-sm-1">
+                    <a href="/">ΑΡΧΙΚΗ</a> 
+                </li>
+                <!--Tennis Page-->
+                <li class = "navButton col-lg-2 col-md-1 col-sm-1"> 
+                    <a href="/tennis">ΤΕΝΝΙΣ</a>
+                    <div class = "dropdown col-12 m-0 p-0">
+                        <div class = "dd_content">
+                            <a href = "/lessons">Μαθήματα Τέννις</a>
+                        </div>
+            
+                        <div class = "dd_content">
+                            <a href = "/tournaments">Τουρνουά Τέννις</a>
+                        </div>
+                    </div> 
+                </li>
+                <!--Facilities Page-->
+                <li class = "navButton col-lg-2 col-md-1 col-sm-1"> 
+                    <a href="/spaces">ΧΩΡΟΙ</a> 
+                    <div class = "dropdown col-12 m-0 p-0"> 
+                        <div class = "dd_content">
+                            <a href = "/courts">Γήπεδα</a>
+                        </div>
+                        <div class = "dd_content">
+                            <a href = "/restaurant">Εστιατόριο</a>
+                        </div>
+                        <div class = "dd_content">
+                            <a href = "/pool">Πισίνα</a>
+                        </div>
+                        <div class = "dd_content">
+                            <a href = "/medicalFacilities">Κέντρο Θεραπείας</a>
+                        </div>
+                    </div> 
+                </li>
+                <!--Booking Page-->
+                <li class = "navButton col-lg-2 col-md-1 col-sm-1"> 
+                    <a href="/booking">ΚΡΑΤΗΣΗ ΓΗΠΕΔΟΥ</a> 
+                </li>
+            </ul>
+            <ul class = "connection_list navbar-nav col-2 p-0 m-0" id = "no_account">
+                <li class="accButton col-lg-6 col-md-6 col-sm-6 p-0 m-0">
+                    <a href = "/login"><button id = "loginBtn">LOGIN</button></a>
+
+                </li>
+                <li class = "accButton col-lg-6 col-md-6 col-sm-6 p-0 m-0">
+                    <a href = "/signup"> <button id = "signupBtn">SIGN UP</button> </a>
+                </li>
+            </ul>
+            <button class = "collapse_button col-2 p-0 m-0"> 
+                &#9776;
+            </button>
+        </nav>
+
+        {{{body}}}
+
+        <!--FOOTER-->
+        <div class = "footer row align-items-stretch p-0 m-0">
+            <ul class = "sections col-lg-8 p-x-0">
+                <li class = "ftrSection col m-0"> 
+                    <h1> 
+                        <a href = "/index">ΑΡΧΙΚΗ</a>
+                    </h1>
+    
+                    <h1> 
+                        <a href = "/login">LOG IN</a>
+                    </h1>
+    
+                    <h1> 
+                        <a href = "/signup">SIGN UP</a>
+                    </h1>
+    
+                </li>
+                <!--TENNIS-->
+                <li class = "ftrSection col m-0"> 
+                    <h1> 
+                        <a href = "/tennis">ΤΕΝΝΙΣ</a>
+                    </h1>
+                    <ul class = "scList">
+                        <li class = "listItem">
+                            <a href = "/lessons">Μαθήματα τέννις</a> 
+                        </li>
+                        <li class = "listItem">
+                            <a href = "/tournaments">Τουρνουά τέννις</a>
+                        </li> 
+                    </ul> 
+                </li>
+                <!--SPACES-->
+                <li class = "ftrSection col m-0"> 
+                    <h1> 
+                        <a href = "/spaces">ΧΩΡΟΙ</a>
+                    </h1>
+                    <ul class = "scList">
+                        <li class = "listItem"> 
+                            <a href = "/courts">Γήπεδα</a>
+                        </li>
+                        <li class = "listItem">
+                            <a href = "/restaurant">Εστιατόριο</a>
+                        </li>
+                        <li class = "listItem">
+                            <a href = "/pool">Πισίνα</a>
+                        </li>
+                        <li class = "listItem">
+                            <a href = "/medicalFacilities">Κέντρο Θεραπείας</a>
+                        </li>
+                    </ul> 
+                </li>
+                <!--BOOKING-->
+                <li class = "ftrSection col m-0"> 
+                    <h1> 
+                        <a href = "/booking">ΚΡΑΤΗΣΗ ΓΗΠΕΔΟΥ</a>
+                    </h1>
+                </li>
+            </ul>
+            <hr>
+            <p> © Villia Tennis Club - Kallia Vasilikopoulou / Dimitris Bokaris / Manolis Oikonomou </p>
+        </div>
+
+        {{#each scripts}}
+            <script type = "application/javascript" src={{script}}></script>
+        {{/each}}
+        <script type = "text/javascript" src = "/scripts/sideNav.js"></script>
+
+    </body>

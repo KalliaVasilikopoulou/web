@@ -1,0 +1,208 @@
+.tennis_card { 
+    display: flex; 
+    flex-direction: column;
+
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+
+.tennis_banner { 
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: fit-content;
+    min-height: 300px;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+.tennis_banner #title { 
+    width: 80%;
+    padding: 20px 0px 20px 0px;
+    color: #e79367;
+    position: relative;
+    left: 10%; 
+
+    word-wrap: normal;
+}
+
+.tennis_banner h1 { 
+    text-align: left; 
+
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.tennis_banner #subtitle { 
+    width: 80%;
+    color: #6c6f6f;
+    position: relative;
+    left: 10%;
+    padding-bottom: 40px;
+
+    word-wrap: normal;
+}
+
+.tennis_banner p{
+    text-align: left;
+    
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.tennis_info { 
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    background-image: url("../imgs/tennisPage/kale-salad.jpg");
+}
+
+.tennis_info_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tennis_info span{ 
+    display: flex;
+    flex-direction: column;
+
+    background-color: white; 
+    color: #ea9d73;
+    box-shadow: 5px 5px #6c6f6f;
+    margin: 50px 0px 50px 0px;
+}
+
+.tennis_info .banner { 
+    font-size: 30px;
+
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+
+    color: currentColor;
+    text-align: left;
+
+    border-bottom: 1px solid;
+}
+
+.tennis_info .image{ 
+    height: fit-content;
+    width: 100%;
+}
+
+.tennis_info .text { 
+    font-size: 20px;
+    padding: 10px;
+}
+
+.tennis_info .button{
+    font-size: 20px;
+    min-height: 50px;
+    height: fit-content;
+    text-align: left;
+    background-color: currentColor;
+}
+
+.tennis_info #play_tennis{ 
+    align-self: flex-start;
+    color: #003441;
+}
+
+.tennis_info #tennis_lessons{ 
+    align-self: flex-start;
+    color: #003441;
+}
+
+.tennis_info #tennis_tournaments{ 
+    align-self: flex-start;
+    color: #003441;
+}
+
+.tennis_info .button a { 
+    color: white;
+    display:flex;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.tennis_info .button:hover{ 
+    background-color: #f78da7;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .tennis_card{
+        width: 100%;
+    }
+    .tennis_info span { 
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1200px) { 
+    .tennis_info #clubs{ 
+        width: 35%;
+    }
+    
+    .tennis_info #competitions{ 
+        width: 35%;
+    }
+    
+    .tennis_info #play_tennis{ 
+        width: 25%;
+    }
+    
+    .tennis_info #tennis_lessons{ 
+        width: 25%;
+    }
+    
+    .tennis_info #tennis_tournaments{ 
+        width: 25%;
+    }    
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .tennis_banner h1{ 
+        font-size: 35px;
+    }
+    .tennis_banner p{ 
+        font-size: 18px;
+    }
+
+    .tennis_info .banner{ 
+        font-size: 25px;
+    }
+
+    .tennis_info .text{ 
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .tennis_banner h1{ 
+        font-size: 30px;
+    }
+    .tennis_banner p{ 
+        font-size: 15px;
+    }
+
+    .tennis_info .banner{ 
+        font-size: 20px;
+    }
+
+    .tennis_info .text{ 
+        font-size: 15px;
+    }
+
+}

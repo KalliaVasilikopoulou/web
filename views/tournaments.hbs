@@ -1,0 +1,72 @@
+<div class = "tournaments_main row p-0 m-0">
+    <div class = "tournaments_card p-0">
+        <div class = "tournaments_banner_title row m-0 p-0">
+            <div>
+                <h1>
+                    ΤΟΥΡΝΟΥΑ
+                </h1>
+                <h4>
+                    Επερχόμενα Τουρνουά ┃ VILLIA TENNIS CLUB
+                </h4>
+            </div>
+        </div>
+        <div class = "tournaments_banner_subtitle row m-0 p-0"> 
+            <div class = "title row"> 
+                <h1>
+                    Λίγα λόγια για τα τουρνουά μας...
+                </h1>
+            </div>
+            <div class = "subtitle row"> 
+                <p>
+                    Το κλαμπ μας διοργανώνει τουρνουά τένις σε τακτά χρονικά διαστήματα, τα οποία πραγματοποιούνται στις εγκαταστάσεις μας. Όλα τα μέλη μας,
+                    ανεξαρτήτως ηλικίας, εμπειρίας ή επιπέδου δεξιοτήτων, μπορούν να συμμετέχουν στα τουρνουά μας. Στα τουρνουά μπορούν να πάρουν μέρος και άτομα
+                    που δεν αποτελούν μέλη του κλαμπ μας, αλλά θέλουν μόνο να συμμετέχουν στους αγώνες.<br>
+                    Με λίγα απλά βήματα θα μπρορέσετε κι εσείς να πάρετε μέρος σε ένα από τα τουρνουά μας!<br>
+                    Αρχικά θα χρειαστεί να φτιάξετε λογαριασμό στο σάιτ μας. Μετά, το μόνο που χρειάζεται είναι να επιλέξετε ένα από τα επερχόμενα τουρνουά που
+                    θα βρείτε στο ημερολόγιο-τουρνουά στο τέλος της σελίδας και να συμπληρώσετε τα σχόλιά σας, αν έχετε, στην φόρμα που θα σας δωθεί στην συνέχεια.<br>  
+                </p>
+                <div class = "admin_button" style="margin-bottom: 60px;">
+                    <button id="addTournamentBtn" style="background-color: blueviolet; padding: 10px;"><a href="#joinLocation" style="text-decoration: none; color: white; font-weight: bold;">ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ ΤΩΡΑ</a></button>
+                </div>
+            </div>
+        </div>
+        <div class = "tournaments_info row m-0 p-0"> 
+            <div class = "tournaments_info_banner row m-0 p-0"> 
+                <h1>ΕΠΕΡΧΟΜΕΝΑ ΤΟΥΡΝΟΥΑ</h1>
+            </div>
+
+            <div class = "tournament_rows"> 
+
+            </div>
+
+            <div class = "buttons row m-0"> 
+
+            </div>
+        </div>
+        <div class = "tournaments_info row m-0 p-0"  id="joinLocation"> 
+            <div class = "tournaments_info_banner row m-0 p-0"> 
+                <h1>ΣΥΜΜΕΤΟΧΗ ΣΕ ΤΟΥΡΝΟΥΑ</h1>
+            </div>
+            <div style="margin:40px;">Κάνε κλικ σε έναν από τους τους τίτλους των διαθέσιμων τουρνουά για να δηλώσεις συμμετοχή!</div>
+            <div class = "board_row m-0">
+                <table class = "board" style = "width: 95%; margin: auto;">
+                    <p style ="text-align:center; padding: 20px; font-weight: bold;">Πίνακας Τουρνουά</p>
+                    <tr id="board_headers">
+                        <th></th><th></th><th></th><th></th><th></th>
+                    </tr>
+                    {{#each tournaments}}
+                        <tr id = {{tournamentid}}>
+                            <td id = "cell_date">{{startdate}}</td>
+                            <td id = "cell_date">{{enddate}}</td>
+                            <td><a href="/selectedTournament?tournamentid={{tournamentid}}" style = "text-decoration: none;">{{title}}</a></td>
+                            <td>{{skilllevel}}</td>
+                            <td>{{agerestrictions}}</td>
+                        </tr>
+                    {{/each}}
+                </table>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<script type = "application/javascript" src = "/tournamentsMain.cjs"> </script>

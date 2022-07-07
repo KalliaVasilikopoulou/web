@@ -1,0 +1,246 @@
+.pool_card { 
+    display: flex; 
+    flex-direction: column;
+
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+
+.pool_card .pool_banner { 
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    width: 100%;
+    height: fit-content;
+    min-height: 300px;
+    background-color: white;
+    text-shadow: -1.2px -1.2px 0 #000, 1.2px -1.2px 0 #000, -1.2px 1.2px 0 #000, 1.2px 1.2px 0 #000;
+    padding-bottom: 30px;
+    
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../imgs/poolPage/poolPageBanner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.pool_card .pool_banner #title{
+    text-align: left;
+
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+
+    width: 80%;
+    padding:  40px 0px 0px 50px;
+    color: white;
+    position: absolute;
+    left: 0%;
+    word-wrap: normal;
+}
+
+.pool_card .pool_info {
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.pool_info .info_card{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.pool_info .info_card div{ 
+    width: 100%;
+}
+
+.pool_info .info_card .info_banner { 
+    width: 100%;
+    min-height: 60px;
+    height: fit-content;
+    background-color: #0091d2;
+}
+
+.pool_info .info_card .info_banner h4{
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+     
+    color: white; 
+    width: 95%; 
+    margin:auto;
+}
+
+.pool_info .info_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info_row .text{
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px; 
+
+    width: 90%; 
+    margin: auto;
+    color: #6c6f6f;
+    padding-top: 20px;
+}
+
+.info_row span{ 
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+
+    width: 35%;
+    margin: 50px 0px 50px 0px;
+}
+
+.info_row .side_text{ 
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+
+    color: #6c6f6f;
+}
+
+#section .photo1{
+    box-shadow: -5px 5px #6c6f6f;
+}
+
+#section .photo2{
+    box-shadow: 5px 5px #6c6f6f;
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .pool_card .pool_banner #title{ 
+        font-size: 35px;
+    }
+
+    .pool_info .info_card .info_banner h4{ 
+        font-size: 35px;
+    }
+    .info_row .text{ 
+        font-size: 18px;
+    }
+    .info_row .side_text{ 
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .pool_card .pool_banner #title{ 
+        font-size: 30px;
+    }
+
+    .pool_info .info_card .info_banner h4{ 
+        font-size: 30px;
+    }
+    .info_row .text{ 
+        font-size: 15px;
+    }
+    .info_row .side_text{ 
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .pool_card{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .info_row .side_text, .info_row .photo1, .info_row .photo2 {
+        min-width: 80%;
+    }
+
+    .info_row .side_text {
+        margin-top: 0px;
+    }
+}
+
+/*#info_text #bottom{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-left: 46.6875px;
+    width: 90%;
+    display: grid;
+    grid-template: 400px / 1fr 1fr;
+}
+
+.pool_info .info_card #banner h4::before{
+    content: "";
+    display: inline-block;
+    width :40px;
+    height: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    background-image: url("../imgs/tennis-player-white.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 34px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.pool_card #membership{
+    margin: auto;
+    height: 10px;
+}
+
+.pool_card #membership button{
+    width: 25%;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 32px;
+    color: white;
+    box-shadow: 2px 2px #6c6f6f;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #0091d2;
+    border: 0px;
+	border-radius: 10px;
+    transition: 0.35s;
+}
+
+.pool_card #membership button:hover {
+	color: #0091d2;
+    box-shadow: 5px 7px #565858;
+	background-color: #d5f1fe;
+	transition: 0.35s;
+}
+
+#scroll-up{
+    display: block;
+    height: 50px;
+    width: 50px;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-image: url("scroll-up-blue.png") , radial-gradient(white 26%,#3498db);
+    border-radius: 50%;
+    border: 0px;
+}*/
+
