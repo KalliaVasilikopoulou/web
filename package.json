@@ -1,6 +1,9 @@
 {
   "name": "tennis_club",
   "version": "1.0.0",
+   "engines": {
+    "node": "16.x"
+  },
   "description": "Tennis Club website for web programming course, 8th semester",
   "main": "start.cjs",
   "dependencies": {
