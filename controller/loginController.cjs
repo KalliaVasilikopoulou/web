@@ -1,8 +1,8 @@
 const bcrypt = require("bcrypt"); 
 const dotenv = require("dotenv");
 
-// let userModel = require('../model/model_pg.cjs');
-let userModel = require('../model/db.pg.js');
+let userModel = require("../model/model_pg.cjs");
+// let userModel = require('../model/db.pg.js');
 
 
 //function used when the complete button of the sign up popup gets clicked
