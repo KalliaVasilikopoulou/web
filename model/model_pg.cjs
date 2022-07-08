@@ -2,6 +2,31 @@
 const sql = require('./db.pg.js');
 const bcrypt = require('bcrypt');
 
+
+//use it to create admin account (at start.cjs)
+let createAdmin = (username,callback) => { 
+
+    const query = { 
+        text: 
+        `UPDATE account
+        SET adminrights = 'true'
+        WHERE accountname = '${username}';`
+    }
+
+    sql.query(query, (err, res) => { 
+
+        if(err) { 
+            console.log(err.stack)
+            callback(err.stack)
+        }
+        else { 
+            callback(null, res.rows)
+        }
+
+    });
+}
+
+
 //used by logincontroller
 
 //gets all info of account from database according to username input and sends them as response
@@ -554,6 +579,6 @@ let getAllJoins = (callback) => {
 
 }
 
-module.exports = {getUserByUsername, registerUser, getAdminRights, 
+module.exports = {createAdmin, getUserByUsername, registerUser, getAdminRights,
                   getTablehours, bookSlot, changeSlotAvailability, deleteReservation, courtReservations, accountReservations, cancelReservation, 
                   getTournaments, getTournamentById, getTournamentsNumber, addTournament, deleteTournament, getMonths, deleteMonth, updateTournament, joinTournament, getUserTournaments, getMonthTournaments, cancelJoinTournament, getAllJoins, searchJoin};
