@@ -1,4 +1,0 @@
-
-This folder was created so admin can upload images, using multer.
-
-This speific file was created due to problems when commiting to github (turned into hidden file, because it was an empty folder initially).
