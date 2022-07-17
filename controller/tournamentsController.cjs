@@ -502,7 +502,7 @@ let imagesNotUsed;
 //checks if the images that are in the files folder are in the database
 //if an image is in the files folder but not in the database (this means that we don't need it), it deletes it
 function cleanDisk() {
-    imagesInUse = [];
+    imagesInUse = ["public/files/info_about_files.txt"];
     allImages = fs.readdirSync("public/files/");
     for (let i in allImages) allImages[i]= "public/files/"+allImages[i];
     model.getTournaments(function(err, tournaments) { 
