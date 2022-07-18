@@ -141,7 +141,7 @@ function deleteTournamentFromDB (req,res) {
         if (err)
             return console.error(err.message);
         else {
-            cleanDisk();
+            //cleanDisk();
             model.getTournaments(function(err, tournaments) { 
                 if(err) { 
                     res.send(err);
@@ -160,7 +160,7 @@ function deleteMonthFromDB (req,res) {
         if (err)
             return console.error(err.message);
         else {
-            cleanDisk();
+            //cleanDisk();
             model.getTournaments(function(err, tournaments) { 
                 if(err) { 
                     res.send(err);
@@ -315,7 +315,7 @@ function editTournamentAtDB (req,res) {
                                     res.send(err);
                                 }
                                 else {
-                                    cleanDisk();
+                                    //cleanDisk();
                                     console.log("form submitted");
                                     res.redirect("/tournamentsAdmin");
                                 }
