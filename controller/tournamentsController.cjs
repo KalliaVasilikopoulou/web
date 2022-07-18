@@ -184,8 +184,8 @@ function editTournamentSelect(req,res) {
         else {
 
             //Due to timezone problems, we have to manually add one day to the dates
-            selected[0].startdate.setDate(selected[0].startdate.getDate()+1);
-            selected[0].enddate.setDate(selected[0].enddate.getDate()+1);
+            //selected[0].startdate.setDate(selected[0].startdate.getDate()+1);
+            //selected[0].enddate.setDate(selected[0].enddate.getDate()+1);
 
             selected[0].startdate = (selected[0].startdate).toISOString().slice(0, 10);
             selected[0].enddate = (selected[0].enddate).toISOString().slice(0, 10);
